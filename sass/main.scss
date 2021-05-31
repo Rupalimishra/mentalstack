@@ -1,0 +1,479 @@
+body {margin:0;}
+
+$primary-color: #fff;
+$secondary-color: black;
+$color-purple:#6424EE;
+$myFont-family: 'Lato', sans-serif;
+$mySec-family: 'Roboto Condensed', sans-serif;
+
+@mixin clearfix {
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+
+@mixin infix {
+  width: 24%;
+  height: 26%;
+  position: relative;
+  top: 107px;
+}
+
+@mixin zoomfix {
+  height: 300px;
+  width: 300px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap');
+.navbar {
+  overflow: hidden;
+  background-color: $primary-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  
+}
+
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: $secondary-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 700;
+  color: $secondary-color;
+  transition: .5s linear;
+  font-size: 16px;
+  font-family: $myFont-family;
+}
+
+.navbar a:hover {
+    color:$color-purple;
+}
+
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 800px;
+    background-image: url('../img/img8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+  }
+  .main-logo {
+    font-size: 20px;
+    font-family: $myFont-family;
+    font-weight: 700;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    letter-spacing: 4px; 
+  }
+  
+  .main-div{
+    float: right;
+    padding: 10px;
+    @include clearfix;
+    font-family: $myFont-family;
+    top: -10px;
+    left: -107px;
+  }
+ .sub-heading{
+     font-family: $myFont-family;
+     cursor: pointer;
+    @include clearfix;
+     top: 33px;
+     left: 225px;
+
+ }
+ .sub-heading span:hover{
+   color:  $color-purple;
+   transition: .5s linear;
+ }
+ .sub-main {
+     height: 1000px;
+     font-size: 65px;
+     font-family: $mySec-family;
+     position: relative;
+     top: 60px;
+     left: 70px;
+     
+ }
+ .component-sty {
+    color:$primary-color;
+    font-family: $mySec-family;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: 52px;
+    
+ }
+ .content-sty {
+    color:$primary-color;
+    font-family: $mySec-family;
+    max-width: 800px;
+    line-height: 96px;
+    font-size: 35px;
+    position: relative;
+    top: -105px;
+    left: 45px;
+}
+
+.subtitle-sty{
+    margin-top: 35px;
+    max-width: 570px;
+    font-family: $myFont-family;
+    font-size: 18px;
+    line-height: 27px;
+    color: $primary-color;
+    position: relative;
+    top: -110px;
+    left: 45px;
+}
+.content-text {
+    display: flex;
+}
+.section-heading {
+    font-family: $mySec-family;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: .05em;
+    position: relative;
+    top: 85px;
+    left: 564px;
+   
+}
+
+.row {
+    position:relative;
+    bottom:739px;
+    padding:33px;
+    margin:15px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.small-card {
+  width: 100%;
+  height: 800px;
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.column{
+  float: left;
+  width: 25%;
+  padding: 6px 32px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    background-color: $primary-color;
+    font-family:$mySec-family ;
+  }
+  .card:hover {
+    background-color: $color-purple;
+    cursor: pointer;
+    color:$primary-color;
+  }
+  
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    background-color:red;
+  }
+  
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .img-component {
+    background-color:$primary-color;
+    height: 1000px;
+   
+  }
+  .left-div {
+    width: 58%;
+    background-image: url(../img/off1.jpg);
+    height: 44%;
+  }
+  .left-heading {
+    font-size: 40px;
+    font-family: $myFont-family;
+    padding: 25px;
+  }
+
+  .right-div{
+    float: right;
+    max-width: 440px;
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    bottom: 363px;
+    font-family: $myFont-family;
+}
+@media screen and (max-width: 1549px) {
+.title {
+    font-size: 56px;
+}
+}
+.title {
+  font-family: $mySec-family;
+  margin-bottom: 30px;
+  color: $secondary-color;
+  margin-top: -52px;
+}
+ 
+.sub-div {
+  background-color: $secondary-color;
+  height: 400px;
+  color: $primary-color;
+}
+.recognition-head {
+  
+    color: $primary-color;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-family:$mySec-family;
+    padding: 42px;
+    text-decoration: underline;
+}
+.recog-title {
+    font-size: 40px;
+    color:$primary-color;
+    font-family: $mySec-family;
+    width: 440px;
+    
+}
+
+.img-opacity {
+  float: right;
+  position: relative;
+  top: -236px;
+}
+.img-opacity:hover{
+  opacity: 1.0;
+}
+.image-off-sty{
+  height: 700px;
+  background-color:$primary-color;
+
+}
+.main-style {
+  display: flex;
+  position: relative;
+  bottom: 568px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+.left-main {
+  font-family: $mySec-family;
+  font-size: 54px;
+}
+.right-main {
+  font-family: $mySec-family;
+  font-size: 22px;
+  letter-spacing: .05em;
+}
+.right-main:hover{
+  color: $color-purple;
+  cursor: pointer;
+}
+
+.main-img-sty {
+  display: flex;
+  position: relative;
+  bottom: 556px;
+  justify-content: space-around;
+  padding: 46px;
+}
+.footer {
+  height: 600px;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.footer-sub-head {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  position: relative;
+  top: 222px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1549px) {
+.big-heading {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 27px;
+  }
+}
+.big-heading h2 span {
+  font-family: sans-serif;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $primary-color;
+  min-width: 160px;
+  z-index: 1;
+}
+.num-heading {
+  display: flex;
+  color:$primary-color;
+  justify-content: space-between;
+  font-size: 50px;
+  font-family: $mySec-family;
+  position: relative;
+  top: -142px;
+
+}
+.num-sty1{
+  font-family: $mySec-family;
+  font-size: 20px;
+  position: relative;
+  top: -61px;
+  left: 11px;
+}
+.left-num-heading {
+  position: relative;
+  top: -8px;
+  left: 30px;
+}
+.num-sty2 {
+  font-family: $mySec-family;
+  font-size: 20px;
+  position: relative;
+  top: -61px;
+  left: 11px
+}
+.right-num-heading{
+  position: relative;
+  right: 849px;
+}
+.row1 {
+  position: relative;
+  top: -758px;
+  margin: 35px;
+}
+.sub-card1{
+    @include infix;
+    background-color: pink;
+}
+.sub-card2{
+  @include infix;
+  background-color: red;
+}
+.sub-card3{
+  @include infix;
+  background-color: royalblue;
+}
+
+.title-exp{
+  position: relative;
+  left: 35px;
+  top: -89px;
+}
+.first-img{
+  position: relative;
+  right: 613px;
+  opacity: 0.5;
+}
+.first-img:hover {
+  opacity: 1.0;
+}
+.sec-img{
+  position: relative;
+  top: -54px;
+  right: 452px;
+  opacity: 0.5;
+}
+.sec-img:hover{
+  opacity: 1.0;
+}
+.third-img{
+  position: relative;
+  top: -108px;
+  right: 286px;
+  opacity: 0.5;
+}
+.third-img:hover{
+  opacity: 1.0;
+}
+.fourth-img{
+  position: relative;
+  top: -163px;
+  right: 112px;
+  opacity: 0.5;
+}
+.fourth-img:hover{
+  opacity: 1.0;
+}
+.frame {
+  @include zoomfix;
+  overflow: hidden;
+}
+.zoomin img {
+  @include zoomfix;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.zoomin img:hover {
+  width: 350px;
+  height: 350px;
+}
+.themantic-sty{
+  opacity: 0.5;
+  position: relative;
+  top: 213px;
+}
+.img-overlap {
+  width: 80%;
+  height: 80%;
+  padding: 29px;
+  
+}
+
+.card-image {
+  color:$primary-color;
+  font-family: $mySec-family ;
+}
+.zoom-head{
+  font-family: $myFont-family;
+  font-size:26px;
+  line-height: 1.3;
+}
